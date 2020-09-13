@@ -1,0 +1,10 @@
+{% extends "service/base.html" %}
+
+{% block import %}
+    <link rel="stylesheet" href="static/css/error.css">
+{% endblock %}
+
+{% block content %}
+    <h1 align="center">Произошла ошибка</h1>
+    <h2>Причина: {{ cause }}</h2>
+{% endblock %}

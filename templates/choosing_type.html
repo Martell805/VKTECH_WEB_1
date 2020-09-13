@@ -1,0 +1,20 @@
+{% extends "service/base.html" %}
+
+{% block import %}
+    <link rel="stylesheet" href="static/css/choosing_type.css">
+{% endblock %}
+
+{% block content %}
+<a href="/target">
+    <div>
+        <h2>Целевой сбор</h2>
+        <h4>Когда есть определённая цель</h4>
+    </div>
+</a>
+<a href="/regular">
+    <div>
+        <h2>Регулярный сбор</h2>
+        <h4>Если помощь нужна ежемесячно</h4>
+    </div>
+</a>
+{% endblock %}

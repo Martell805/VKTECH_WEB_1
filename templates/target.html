@@ -1,0 +1,74 @@
+{% extends "service/base.html" %}
+
+{% block import %}
+    <link rel="stylesheet" href="static/css/target.css">
+{% endblock %}
+
+{% block content %}
+<form class="target_form" action="" method="post">
+    {{ form.hidden_tag() }}
+    <div class="file_input_div">
+        {{ form.cover.label }}<br>
+        {{ form.cover(class="form-control", type="file") }}<br>
+        {% for error in form.cover.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="input_div">
+        {{ form.name.label }}<br>
+        {{ form.name(class="form-control", type="text") }}<br>
+        {% for error in form.cover.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="input_div">
+        {{ form.cost.label }}<br>
+        {{ form.cost(class="form-control", type="number") }}<br>
+        {% for error in form.cost.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="input_div">
+        {{ form.target.label }}<br>
+        {{ form.target(class="form-control", type="text") }}<br>
+        {% for error in form.target.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="input_div">
+        {{ form.description.label }}<br>
+        {{ form.description(class="form-control", type="text") }}<br>
+        {% for error in form.description.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="input_div">
+        {{ form.account.label }}<br>
+        {{ form.account(class="form-control", type="text") }}<br>
+        {% for error in form.account.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="button">
+        {{ form.submit(type="submit", class="button") }}
+    </div>
+</form>
+{% endblock %}
