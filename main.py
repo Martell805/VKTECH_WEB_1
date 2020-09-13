@@ -116,7 +116,7 @@ def not_found(error):
 
 
 def main():
-    app.run(port=8080, host='127.0.0.1')
+    app.run(host='127.0.0.1')
 
 
 if __name__ == '__main__':
