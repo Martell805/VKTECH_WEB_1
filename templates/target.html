@@ -9,7 +9,7 @@
     {{ form.hidden_tag() }}
     <div class="file_input_div">
         {{ form.cover.label }}<br>
-        {{ form.cover(class="form-control", type="file") }}<br>
+        {{ form.cover(class="file_form-control", type="file", placeholder="Загрузить обложку") }}<br>
         {% for error in form.cover.errors %}
             <div class="alert alert-danger" role="alert">
                 {{ error }}
@@ -19,7 +19,7 @@
 
     <div class="input_div">
         {{ form.name.label }}<br>
-        {{ form.name(class="form-control", type="text") }}<br>
+        {{ form.name(class="form-control", type="text", placeholder="Название сбора") }}<br>
         {% for error in form.cover.errors %}
             <div class="alert alert-danger" role="alert">
                 {{ error }}
@@ -29,7 +29,7 @@
 
     <div class="input_div">
         {{ form.cost.label }}<br>
-        {{ form.cost(class="form-control", type="number") }}<br>
+        {{ form.cost(class="form-control", type="number", placeholder="Сколько нужно собрать?") }}<br>
         {% for error in form.cost.errors %}
             <div class="alert alert-danger" role="alert">
                 {{ error }}
@@ -39,7 +39,7 @@
 
     <div class="input_div">
         {{ form.target.label }}<br>
-        {{ form.target(class="form-control", type="text") }}<br>
+        {{ form.target(class="form-control", type="text", placeholder="Например, лечение человека") }}<br>
         {% for error in form.target.errors %}
             <div class="alert alert-danger" role="alert">
                 {{ error }}
@@ -49,7 +49,7 @@
 
     <div class="input_div">
         {{ form.description.label }}<br>
-        {{ form.description(class="form-control", type="text") }}<br>
+        {{ form.description(class="form-control", type="text", placeholder="На что могут поути деньги и как они кому-то помогут?") }}<br>
         {% for error in form.description.errors %}
             <div class="alert alert-danger" role="alert">
                 {{ error }}
@@ -59,7 +59,7 @@
 
     <div class="input_div">
         {{ form.account.label }}<br>
-        {{ form.account(class="form-control", type="text") }}<br>
+        {{ form.account(class="form-control", type="text", value="Счёт VK PAY 1234") }}<br>
         {% for error in form.account.errors %}
             <div class="alert alert-danger" role="alert">
                 {{ error }}
@@ -67,7 +67,7 @@
         {% endfor %}
     </div>
 
-    <div class="button">
+    <div>
         {{ form.submit(type="submit", class="button") }}
     </div>
 </form>

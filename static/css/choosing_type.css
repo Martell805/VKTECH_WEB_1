@@ -1,3 +1,39 @@
-p{
+.choose{
+    background: #F5F5F5;
+    text-decoration: none;
+    border-radius: 10px;
+}
 
+h2{
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: -0.32px;
+
+    color: #000000;
+    text-decoration: none;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+h4{
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    letter-spacing: -0.078px;
+
+    color: #6D7885;
+    text-decoration: none;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
